@@ -1,0 +1,8 @@
+2022-04-01 17:03:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table carro(\000d\000aidCarro integer not null [*]auto increment,\000d\000anomeCarro varchar(255),\000d\000aconstraint idCarro_pk primary key (idCarro),\000d\000aconstraint nomeCarro_unique unique (nomeCarro)\000d\000a)"; expected "AS, DEFAULT, GENERATED, ON, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table carro(
+idCarro integer not null auto increment,
+nomeCarro varchar(255),
+constraint idCarro_pk primary key (idCarro),
+constraint nomeCarro_unique unique (nomeCarro)
+) [42001-210]
