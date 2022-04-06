@@ -17,11 +17,23 @@ public class Marca {
 	public void setNomeMarca(String nomeMarca) {
 		this.nomeMarca = nomeMarca;
 	}
+	
+	@Override
+	public String toString() {
+		return	
+			"ID Empresa: " + this.getIdMarca() + "\n" +		
+			"Nome da empresa: " + this.getNomeMarca()+ "\n\n";
+	}
+	
 	public Marca(Integer idMarca, String nomeMarca) {
 		super();
 		this.idMarca = idMarca;
 		this.nomeMarca = nomeMarca;
 	}
+	
+	public Marca() {}
+	
+	
 	
 	
 	

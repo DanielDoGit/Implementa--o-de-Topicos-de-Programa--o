@@ -1,24 +1,34 @@
 package dao;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import org.h2.command.Prepared;
 
 public class ConexaoBancoDeDados {
 	
-	private static Connection connection;
+	private Connection connection;
 	private String user, password, urlBanco;
 	
 	
-	public ConexaoBancoDeDados() throws SQLException {
+	public Connection getConnection() {
+		return this.connection;
+	}
+	
+	public ConexaoBancoDeDados() throws SQLException, ClassNotFoundException {
 			
+		//Class.forName("com.h2database");
 		this.user = "throwsException";
 		this.password = "throwsException";
-		this.urlBanco = "jdbc:h2:./banco/banco";
+		//linux
+		//this.urlBanco = "jdbc:h2:/home/limalinux/eclipse-workspace2020/projeto3BccDaniel/banco";
+		//windows
+		this.urlBanco = "jdbc:h2:C:\\bancoh2\\banco";
+		
 		connection = DriverManager.getConnection(this.urlBanco,this.user,this.password);
+	
 	}
 
 }

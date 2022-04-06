@@ -24,6 +24,19 @@ public class Proprietario {
 		this.nomeDoProprietario = nomeDoProprietario;
 	}
 	
+	public Proprietario() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public String toString() {
+		return	
+			"ID Empresa: " + this.getIdProprietario() + "\n" +		
+			"Nome da empresa: " + this.getNomeDoProprietario()+ "\n\n";
+	}
+	
+	
+	
 	
 	
 }

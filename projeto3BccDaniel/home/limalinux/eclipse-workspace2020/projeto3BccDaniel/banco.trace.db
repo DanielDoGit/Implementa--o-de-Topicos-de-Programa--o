@@ -1,0 +1,3 @@
+2022-04-04 13:49:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRO" not found (this database is empty); SQL statement:
+insert into carro values (1,'gol') [42104-210]
